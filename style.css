@@ -8,11 +8,12 @@ html, body {
 }
 
 p {
+    font-family: sans-serif;
     color: white;
 }
 
 body {
-
+height: 100vh;
     display: grid;
     grid-template-areas: 
         'nav     nav     nav'
@@ -28,10 +29,51 @@ nav {
     height: 10vh;
 }
 
+.nav-up {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.bell-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 10px;
+  position: relative;
+  outline: none;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.bell-button:active .bell-icon {
+  display: inline-block;
+  animation: shake 0.5s ease-in-out infinite;
+}
+
+
 main {
+   padding: 0px  227px ;
     grid-area: main;
     background-color: green;
     height: 80vh ;
+}
+
+.thumbnail {
+ 
+    border-radius: 10px;
+    background-color: lightblue;
+    height: 206.97px;
+    width: 969px;
 }
 
 footer {
