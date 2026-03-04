@@ -24,7 +24,7 @@ body {
 
 nav {
     grid-area: nav;
-    background-color: blue;
+    background-color: black;
     height: 10vh;
 }
 
