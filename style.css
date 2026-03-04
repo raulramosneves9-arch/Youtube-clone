@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -13,80 +14,104 @@ p {
 }
 
 body {
-height: 100vh;
+    height: 100vh;
     display: grid;
-    grid-template-areas: 
-        'nav     nav     nav'
-        'main    main    main'
-        'main    main    main'
-        'footer  footer  footer'
-        ;    
+    grid-template-areas:
+        'nav    nav     nav'
+        'nav2    main    main'
+        'nav2   main    main'
+        'nav2   main    main'
+    ;
 }
 
+.nav-left {
+    grid-area: nav2;
+    background-color: black;
+}
+
+/* START NAV */
 nav {
+   
     grid-area: nav;
     background-color: black;
     height: 5vh;
 }
 
 .nav-up {
+     padding: 0px 16px;
     gap: 10px;
     display: flex;
     justify-content: space-between;
 }
 
+.menu-logo {
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.icon-youtube {
+    padding: 18px 14px 18px 16px;
+}
+
+.bi-list {
+    height: 24px;
+    width: 24px;
+}
+
 .search-container {
-    display: flex;  
+    display: flex;
     flex-direction: row;
 }
 
 .search-bar {
-  display: flex;
-  align-items: center;
-  border: 1px solid #303030;
-  border-radius: 40px;
-  overflow: hidden;
-  width: 500px;
-  background: #121212;
+    display: flex;
+    align-items: center;
+    border: 1px solid #303030;
+    border-radius: 40px;
+    overflow: hidden;
+    width: 500px;
+    background: #121212;
 }
 
 .search-bar input {
-  flex: 1;
-  padding: 10px 16px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: transparent;
-  color: #fff;
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
 }
 
 .search-bar .btn-search {
-  padding: 10px 20px;
-  background: #222222;
-  border: none;
-  border-left: 1px solid #303030;
-  cursor: pointer;
-  font-size: 18px;
-  color: #fff;
+    padding: 10px 20px;
+    background: #222222;
+    border: none;
+    border-left: 1px solid #303030;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
 }
 
 .search-bar .btn-search:hover {
-  background: #303030;
+    background: #303030;
 }
 
 .btn-mic {
-  padding: 10px 14px;
-  background: #222222;
-  border: 1px solid #303030;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 18px;
-  color: #fff;
-  margin-left: 8px;
+    padding: 10px 14px;
+    background: #222222;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 8px;
 }
 
 .btn-mic:hover {
-  background: #303030;
+    background: #303030;
 }
 
 .bi-youtube {
@@ -94,43 +119,53 @@ nav {
 }
 
 .bell-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 10px;
-  position: relative;
-  outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+
 }
 
-@keyframes shake {
-  0% { transform: rotate(0deg); }
-  25% { transform: rotate(15deg); }
-  50% { transform: rotate(-15deg); }
-  75% { transform: rotate(10deg); }
-  100% { transform: rotate(0deg); }
+.nav-youtube-channel {
+    padding: 1px 6px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.bell-button:active .bell-icon {
-  display: inline-block;
-  animation: shake 0.5s ease-in-out infinite;
-}
+/* END NAV */
 
-
+/* START MAIN */
 main {
-   padding: 0px  227px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 227px;
     grid-area: main;
     background-color: green;
-    height: 85vh ;
+    height: 95vh;
+    width: auto;
 }
 
 .thumbnail {
- 
     border-radius: 10px;
     background-color: lightblue;
     height: 206.97px;
     width: 969px;
 }
+
+.main-youtube-channel {
+    padding: 1px 6px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* END MAIN */
+
 
 footer {
     grid-area: footer;
