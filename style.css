@@ -26,16 +26,23 @@ height: 100vh;
 nav {
     grid-area: nav;
     background-color: black;
-    height: 10vh;
+    height: 5vh;
 }
 
 .nav-up {
     gap: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
+.search-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.bi-youtube {
+    color: red;
+}
 
 .bell-button {
   background: none;
@@ -65,7 +72,7 @@ main {
    padding: 0px  227px ;
     grid-area: main;
     background-color: green;
-    height: 80vh ;
+    height: 85vh ;
 }
 
 .thumbnail {
