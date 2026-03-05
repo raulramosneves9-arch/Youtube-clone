@@ -26,7 +26,10 @@ p {
     color: white;
 }
 
-
+hr {
+    border: none;
+    border-top: 1px solid #303030;
+}
 
 body {
     height: 100vh;
