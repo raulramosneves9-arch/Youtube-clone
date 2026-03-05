@@ -18,10 +18,44 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-        'nav'
-        'main'
+        'nav  nav'
+        'sidebar main'
     ;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    gap: 8px;
+    width: 70px;
+    /* largura da sidebar */
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.sidebar-item:hover {
+    background-color: #222222;
+}
+
+.sidebar-item i {
+    font-size: 22px;
 }
 
 /* START NAV */
