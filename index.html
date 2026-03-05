@@ -13,7 +13,7 @@
 
     <aside class="sidebar">
         <div class="sidebar-item">
-            <i class="bi bi-house-fill"></i>
+            <i class="bi bi-house-door"></i>
             <span>Início</span>
         </div>
         <div class="sidebar-item">
@@ -25,7 +25,7 @@
             <span>Inscrições</span>
         </div>
         <div class="sidebar-item">
-            <i class="bi bi-person-video3"></i>
+            <i class="bi bi-person-circle"></i>
             <span>Você</span>
         </div>
     </aside>
@@ -76,37 +76,77 @@
     <main>
         <img class="thumbnail" src="/img/banner_youtube.jpg" alt="banner youtube">
         <div class="main-container-logo">
-            <div class="main-container-logo">
-                <img class="main-youtube-channel" src="/img/perfil youtube.jpg" alt="youtube logo">
-                <div class="main-info">
-                    <h1>KaumonzinhoJR</h1>
-                    <h3>@KaumonzinhoJR <span class="p">· 1.2M inscritos · 13 vídeos</span></h3>
-                    <p>Faço live todos os dias na ROXINHA <strong>...mais</strong></p>
-                    <a href="https://www.twitch.tv/sonofkaumon"
-                        style="color: #3ea6ff; font-family: Arial; font-size: 0.9em;">twitch.tv/sonofkaumon</a>
-                    <div class="main-buttons">
-                        <button class="button-creat">Personalizar o canal</button>
-                        <button class="button-creat">Gerenciar vídeos</button>
-                    </div>
+            <img class="main-youtube-channel" src="/img/perfil youtube.jpg" alt="youtube logo">
+            <div class="main-info">
+                <h1>KaumonzinhoJR</h1>
+                <h3>@KaumonzinhoJR <span class="p">· 1.2M inscritos · 13 vídeos</span></h3>
+                <p>Faço live todos os dias na ROXINHA <strong>...mais</strong></p>
+                <a href="https://www.twitch.tv/sonofkaumon"
+                    style="color: #3ea6ff; font-family: Arial; font-size: 0.9em;">twitch.tv/sonofkaumon</a>
+                <div class="main-buttons">
+                    <button class="button-creat">Personalizar o canal</button>
+                    <button class="button-creat">Gerenciar vídeos</button>
                 </div>
             </div>
         </div>
+        <!-- Nav secundária -->
         <div class="group-shapes">
-            <p>Início</p>
-            <p>Vídeos</p>
-            <p>Shorts</p>
-            <p>Posts</p>
+            <div class="shape-item active">Início</div>
+            <div class="shape-item">Vídeos</div>
+            <div class="shape-item">Shorts</div>
+            <div class="shape-item">Posts</div>
             <div class="main-icon-search">
                 <i class="bi bi-search"></i>
             </div>
         </div>
+
         <hr>
         <h2>Para você</h2>
-        <div class="footer">
-            <iframe class="videos" width="905" height="509" src="https://www.youtube.com/embed/H8P0oO7if6c"
-                title="#sonofkaumon em #Twitch | Ace de raze na brind!!" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Vídeos em linha horizontal -->
+        <div class="videos-row-wrapper">
+            <div class="videos-row">
+
+                <article class="video-card">
+                    <iframe class="video" src="https://www.youtube.com/embed/H8P0oO7if6c" frameborder="0"
+                        allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img class="video-channel-img" src="/img/perfil youtube.jpg" alt="canal">
+                        <div class="video-text">
+                            <p class="video-title">Ace de raze na Bind!!</p>
+                            <p class="video-sub">KaumonzinhoJR</p>
+                            <p class="video-sub">13 visualizações · há 6 meses</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <iframe class="video" src="https://www.youtube.com/embed/H8P0oO7if6c" frameborder="0"
+                        allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img class="video-channel-img" src="/img/perfil youtube.jpg" alt="canal">
+                        <div class="video-text">
+                            <p class="video-title">Título do vídeo aqui</p>
+                            <p class="video-sub">KaumonzinhoJR</p>
+                            <p class="video-sub">869 visualizações · há 3 meses</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="video-card">
+                    <iframe class="video" src="https://www.youtube.com/embed/H8P0oO7if6c" frameborder="0"
+                        allowfullscreen></iframe>
+                    <div class="video-info">
+                        <img class="video-channel-img" src="/img/perfil youtube.jpg" alt="canal">
+                        <div class="video-text">
+                            <p class="video-title">Título do vídeo aqui</p>
+                            <p class="video-sub">KaumonzinhoJR</p>
+                            <p class="video-sub">1,2 mil visualizações · há 9 meses</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </div>
     </main>
     <!-- START MAIN -->
