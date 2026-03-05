@@ -32,44 +32,43 @@
 
     <!-- START NAV -->
     <nav class="nav-up">
-
-        <!-- PROGRESS MENU-LOGO CONTAINER -->
+        <!-- ESQUERDA -->
         <div class="menu-logo">
-            <p>
-                <i class="bi bi-list list-iconi"></i>
-            </p>
-
-            <p class="icon-youtube">
-                <i class="bi bi-youtube"></i> YouTube
-            </p>
+            <div class="nav-icon">
+                <i class="bi bi-list" style="font-size: 22px;"></i>
+            </div>
+            <div class="logo-yt">
+                <i class="bi bi-youtube" style="color: red; font-size: 24px;"></i>
+                <span class="logo-text">YouTube <sup style="font-size: 9px;">BR</sup></span>
+            </div>
         </div>
 
-        <!-- PROGRESS SEARCH CONTAINER -->
-        <article class="search-container">
+        <!-- CENTRO -->
+        <div class="search-container">
             <div class="search-bar">
                 <input type="text" placeholder="Pesquisar">
+                <div class="btn-keyboard">
+                    <i class="bi bi-keyboard"></i>
+                </div>
             </div>
-
             <div class="nav-icon">
                 <i class="bi bi-search"></i>
             </div>
-
             <div class="nav-icon">
                 <i class="bi bi-mic"></i>
             </div>
-        </article>
+        </div>
 
-        <!-- PROGRESS ICON-CREATED-BELL CONTAINER -->
+        <!-- DIREITA -->
         <div class="nav-right">
             <button class="button-creat">
-                <i class="bi bi-plus-circle"></i> Criar
+                <i class="bi bi-plus-lg"></i> Criar
             </button>
-
-            <div class="nav-icon">
-                <i class="bi bi-bell bell-icon"></i>
+            <div class="nav-icon bell-wrapper">
+                <i class="bi bi-bell"></i>
+                <span class="bell-badge">9+</span>
             </div>
-
-            <img class="nav-youtube-channel" src="/img/perfil youtube.jpg" alt="youtube logo">
+            <img class="nav-youtube-channel" src="/img/perfil youtube.jpg" alt="avatar">
         </div>
     </nav>
     <!-- END NAV -->
@@ -77,13 +76,20 @@
     <main>
         <img class="thumbnail" src="/img/banner_youtube.jpg" alt="banner youtube">
         <div class="main-container-logo">
-            <img class="main-youtube-channel" src="/img/perfil youtube.jpg" alt="youtube logo">
-            <h1>KaumonzinhoJR</h1>
-            </h2>
-            <h2>@KaumonzinhoJR</h2>
-            <p>· 1.2M inscritos · 13 vídeos</p>
-        </div>
-
+            <div class="main-container-logo">
+                <img class="main-youtube-channel" src="/img/perfil youtube.jpg" alt="youtube logo">
+                <div class="main-info">
+                    <h1>KaumonzinhoJR</h1>
+                    <h2>@KaumonzinhoJR · 1.2M inscritos · 13 vídeos</h2>
+                    <p>Faço live todos os dias na ROXINHA <strong>...mais</strong></p>
+                    <a href="twitch.tv/sonofkaumon"
+                        style="color: #3ea6ff; font-family: Arial; font-size: 0.9em;">twitch.tv/sonofkaumon</a>
+                    <div class="main-buttons">
+                        <button class="button-creat">Personalizar o canal</button>
+                        <button class="button-creat">Gerenciar vídeos</button>
+                    </div>
+                </div>
+            </div>
     </main>
 
 </body>

@@ -75,16 +75,28 @@ body {
 /* START NAV */
 nav {
     grid-area: nav;
-    background-color: black;
-
+    background-color: #0f0f0f;
+    padding: 8px 16px;
 }
 
 .nav-up {
-    padding: 0px 16px;
-    gap: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+}
+
+.logo-yt {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logo-text {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .menu-logo {
@@ -94,22 +106,11 @@ nav {
     align-items: center;
 }
 
-.icon-youtube {
-
-    padding: 0;
-}
-
-.list-iconi {
-    height: 30px;
-    width: 30px;
-}
-
 .search-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
-
 }
 
 .search-bar {
@@ -120,13 +121,12 @@ nav {
     overflow: hidden;
     width: 500px;
     background: #121212;
-    margin: 0 0 0 32px;
     padding: 0 4px 0 16px;
 }
 
 .search-bar input {
     flex: 1;
-    padding: 1px 0px;
+    padding: 8px 0;
     border: none;
     outline: none;
     font-size: 16px;
@@ -134,47 +134,14 @@ nav {
     color: #fff;
 }
 
-.search-bar .btn-search {
-    background: #222222;
+.btn-keyboard {
+    background: transparent;
     border: none;
-    border-left: 1px solid #303030;
+    border-right: 1px solid #303030;
+    color: #aaa;
+    padding: 8px 10px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 15px;
-    color: #fff;
-}
-
-.search-bar .btn-search:hover {
-    background: #303030;
-}
-
-.btn-mic {
-    padding: 10px;
-    background: #222222;
-    border: 1px solid #303030;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 18px;
-    color: #fff;
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-}
-
-.btn-mic:hover {
-    background: #303030;
-}
-
-.bi-youtube {
-    color: red;
-}
-
-.nav-right {
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
 .nav-icon {
@@ -196,6 +163,12 @@ nav {
     background: #303030;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .button-creat {
     gap: 6px;
     padding: 8px 14px;
@@ -211,15 +184,29 @@ nav {
     background: #303030;
 }
 
+.bell-wrapper {
+    position: relative;
+}
+
+.bell-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: red;
+    color: white;
+    font-size: 9px;
+    font-weight: bold;
+    padding: 1px 4px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
 .nav-youtube-channel {
-    padding: 1px 6px;
     height: 32px;
     width: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
-
-
 
 /* END NAV */
 
@@ -245,11 +232,23 @@ main {
 .main-container-logo {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: auto;
-    width: 45%;
-    gap: 16px;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    width: 100%;
+}
 
+.main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 8px;
 }
 
 .main-youtube-channel {
