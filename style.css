@@ -307,7 +307,7 @@ main {
 
 .group-shapes {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
+    font-size: 1.3em;
     text-shadow: #303030;
     color: lightgray;
 }
@@ -326,6 +326,5 @@ main {
     width: 15px;
     height: 15px;
 }
-
 
 /* END MAIN */
