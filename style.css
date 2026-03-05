@@ -10,32 +10,25 @@ body {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1,5em;
+    font-size: 1.5em;
     color: white;
 }
 
 body {
     height: 100vh;
     display: grid;
+    grid-template-rows: auto 1fr;
     grid-template-areas:
-        'nav    nav'
-        'main   main'
-        'main   main'
-        'main   main'
+        'nav'
+        'main'
     ;
-}
-
-.nav-left {
-    grid-area: nav2;
-    background-color: black;
 }
 
 /* START NAV */
 nav {
-
     grid-area: nav;
     background-color: black;
-    height: 5vh;
+
 }
 
 .nav-up {
@@ -68,7 +61,7 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    
+
 }
 
 .search-bar {
@@ -185,19 +178,19 @@ nav {
 /* START MAIN */
 main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 16px;
     flex-wrap: wrap;
     padding: 0px 227px;
     grid-area: main;
     background-color: darkgreen;
-    height: 95vh;
 }
 
 .thumbnail {
     border-radius: 10px;
     background-color: black;
     height: 206.97px;
-    width: 969px;
+    width: 100%
 }
 
 .main-youtube-channel {
