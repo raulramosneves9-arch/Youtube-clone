@@ -165,6 +165,18 @@ nav {
     height: 15px;
 }
 
+.nav-icon-bell {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+}
+
 .nav-icon:hover {
     background: #303030;
 }
