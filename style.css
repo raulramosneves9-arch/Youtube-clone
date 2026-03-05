@@ -39,6 +39,7 @@ p,
 hr {
     border: none;
     border-top: 1px solid #303030;
+    margin: 0 -227px;
 }
 
 body {
@@ -54,17 +55,17 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: black;
+    background-color: #0f0f0f;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 16px 0;
     gap: 8px;
     width: 70px;
-    /* largura da sidebar */
 }
 
 .sidebar-item {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,13 +257,14 @@ nav {
 /* END NAV */
 
 /* START MAIN */
+
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 0px 227px;
+    background-color: #0f0f0f;
     grid-area: main;
-    background-color: #000000;
     color: #0f0f0f0f;
 }
 
@@ -366,22 +368,27 @@ main {
 
 /* END NAV SECUNDÁRIA */
 
-/* START FOOTER */
-
+/* START VIDEOS GRID */
 
 article {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10px 4px 0 0;
+    padding: 0;
     cursor: pointer;
+}
 
+.videos-row-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 16px;
+    width: 100%;
 }
 
 .video {
-    width: 305px;
-    height: 171.56px;
-    border-radius: 15px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
 }
 
 .video-title {
@@ -398,4 +405,74 @@ article {
     font-size: 0.8em;
 }
 
-/* END FOOTER */
+/* END VIDEOS GRID */
+
+/* RESPONSIVO */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .videos-row-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 0 40px;
+    }
+
+    hr {
+        margin: 0 -40px;
+    }
+
+    .search-bar {
+        width: 350px;
+    }
+
+    .main-youtube-channel {
+        height: 100px;
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .videos-row-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 0 16px;
+    }
+
+    hr {
+        margin: 0 -16px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .search-bar {
+        width: 180px;
+    }
+
+    .main-youtube-channel {
+        height: 70px;
+        width: 70px;
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    .thumbnail {
+        height: auto;
+    }
+
+    .main-container-logo {
+        gap: 12px;
+        padding: 16px 0;
+    }
