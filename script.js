@@ -4,6 +4,13 @@ const signUpButton = document.getElementById('btn-inscrever');
 
 let inscrito = false;
 
+menuIcon.addEventListener('click', function () {
+    sideBar.classList.toggle('expandida')
+});
+
+
+
+
 // FUNÇÃO INSCRITO OU NÃO //
 if (localStorage.getItem('inscrito') === 'true') {
     inscrito = true;
