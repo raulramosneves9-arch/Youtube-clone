@@ -366,6 +366,33 @@ main {
     height: 20px;
 }
 
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px 0;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.filter-btn:not(.active) {
+    background: #222222;
+    color: #ffffff;
+}
+
+.filter-btn:hover {
+    opacity: 0.8;
+}
+
 /* END NAV SECUNDÁRIA */
 
 /* START VIDEOS GRID */

@@ -11,7 +11,7 @@
 
 <body>
 
-    <aside class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <div class="sidebar-item">
             <i class="bi bi-house-door"></i>
             <span>Início</span>
@@ -32,7 +32,7 @@
 
     <nav class="nav-up">
         <div class="menu-logo">
-            <div class="nav-icon-list">
+            <div id='menu-icon' class="nav-icon-list">
                 <i class="bi bi-list" style="font-size: 22px;"></i>
             </div>
             <div class="logo-yt">
@@ -94,7 +94,12 @@
         </div>
 
         <hr>
-        <h2>Para você</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active">Mais recentes</button>
+            <button class="filter-btn">Em alta</button>
+            <button class="filter-btn">Mais antigos</button>
+        </div>
 
         <!-- VIDEOS ROW -->
         <div class="videos-row-wrapper">
@@ -183,6 +188,7 @@
             </article>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
