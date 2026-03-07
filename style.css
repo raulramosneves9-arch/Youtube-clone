@@ -290,6 +290,25 @@ main {
     gap: 15px;
 }
 
+/* Não inscrito (padrão) */
+.button-inscrever {
+    padding: 8px 16px;
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* Inscrito */
+.button-inscrever.inscrito {
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #303030;
+}
+
 .main-buttons {
     display: flex;
     flex-direction: row;
