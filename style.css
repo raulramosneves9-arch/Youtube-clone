@@ -555,11 +555,6 @@ article {
 
 /* Celular */
 @media (max-width: 768px) {
-
-    .nav-up {
-        display: none;
-    }
-
     .videos-row-wrapper {
         grid-template-columns: 1fr;
     }
