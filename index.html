@@ -11,7 +11,7 @@
 
 <body>
 
-    <aside id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar">
         <!-- Itens principais -->
         <div class="sidebar-item">
             <i class="bi bi-house-door"></i>
@@ -180,8 +180,64 @@
                 <p>© 2026 Google LLC</p>
             </div>
         </div>
-    </aside>
+    </nav>
 
+    <!-- NAV MOBILE -->
+    <div class="nav-mobile" style="display: none;">
+        <div class="bottom-icon">
+            <i class="bi bi-arrow-left"></i>
+        </div>
+        <div class="bottom-icon">
+            <i class="bi bi-cast"></i>
+        </div>
+        <div class="bottom-icon">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="bottom-icon" id="btn-tres-pontos">
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+    </div>
+
+    <!-- BOTTOM BAR MOBILE -->
+    <div class="bottom-bar">
+        <div class="bottom-icon">
+            <i class="bi bi-arrow-left"></i>
+        </div>
+        <div class="bottom-icon">
+            <i class="bi bi-cast"></i>
+        </div>
+        <div class="bottom-icon">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="bottom-icon" id="btn-tres-pontos">
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+    </div>
+
+    <!-- MODAL TRÊS PONTOS -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-bottom">
+            <div class="modal-handle"></div>
+            <div class="modal-item">
+                <i class="bi bi-share"></i>
+                <span>Share</span>
+            </div>
+            <div class="modal-item">
+                <i class="bi bi-info-circle"></i>
+                <span>About channel</span>
+            </div>
+            <div class="modal-item">
+                <i class="bi bi-slash-circle"></i>
+                <span>Hide user from my channel</span>
+            </div>
+            <div class="modal-item">
+                <i class="bi bi-question-circle"></i>
+                <span>Help & feedback</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- START-NAVUP -->
     <nav class="nav-up">
         <div class="menu-logo">
             <div id='menu-icon' class="nav-icon-list">
@@ -219,6 +275,7 @@
             <img class="nav-youtube-channel" src="/img/perfil_youtube.jpg" alt="avatar">
         </div>
     </nav>
+    <!-- END-NAVUP -->
 
     <main>
         <img class="thumbnail" src="/img/banner_youtube.jpg" alt="banner youtube">

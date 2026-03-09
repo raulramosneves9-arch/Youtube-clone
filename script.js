@@ -1,15 +1,14 @@
 const sideBar = document.getElementById('sidebar');
 const menuIcon = document.getElementById('menu-icon');
 const signUpButton = document.getElementById('btn-inscrever');
+const btnTresPontos = document.getElementById('btn-tres-pontos');
+const modalOverlay = document.getElementById('modal-overlay');
 
 let inscrito = false;
 
 menuIcon.addEventListener('click', function () {
     sideBar.classList.toggle('expandida')
 });
-
-
-
 
 // FUNÇÃO INSCRITO OU NÃO //
 if (localStorage.getItem('inscrito') === 'true') {
@@ -29,5 +28,15 @@ signUpButton.addEventListener('click', function () {
         signUpButton.classList.remove('inscrito');
         signUpButton.textContent = 'Inscrever-se';
         localStorage.setItem('inscrito', 'false'); // salva
+    }
+});
+
+btnTresPontos.addEventListener('click', function () {
+    modalOverlay.classList.add('ativo');
+});
+
+modalOverlay.addEventListener('click', function (e) {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('ativo');
     }
 });
