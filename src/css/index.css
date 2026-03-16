@@ -1,0 +1,6 @@
+/* src/css/main.css */
+@import './nav.css';
+@import './sidebar.css';
+@import './filters.css';
+@import './modal.css';
+@import './responsive.css';
